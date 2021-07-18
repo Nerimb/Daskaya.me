@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Tourney:wght@100&display=swap");
+
+body {
+  float: left;
+  width: 120em;
+  height: 64em;
+  background: linear-gradient(35deg, #000000, #3d5768) fixed center;
+  margin-left: 2em;
+  margin-top: -2em;
+  padding-top: 10px;
+  overflow: hidden;
+}
+
+#demo {
+  position: relative;
+  top: 8.5em;
+  text-align: center;
+  font-family: "Tourney", cursive;
+  color: #ffffff;
+  font-size: 4em;
+}
+
+#icon {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(234deg)
+    brightness(104%) contrast(103%);
+}
+
+.banner {
+  position: fixed;
+  align-items: center;
+  font-family: "Tourney", cursive;
+  color: #ffffff;
+  font-size: 4em;
+}
+
+.text {
+  position: relative;
+  top: 12em;
+  text-align: center;
+  font-family: "Tourney", cursive;
+  color: #ffffff;
+  font-size: 3em;
+}
+
+.icon {
+  position: relative;
+  width: 4em;
+  color: white;
+}
+
+.icon1 {
+  left: 112em;
+  top: 5em;
+}
+
+.icon2 {
+  left: 107.8em;
+  top: 11em;
+  width: 4em;
+}
+
+.balls {
+  border-radius: 50%;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  top: 40%;
+  animation-name: jump;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+#red {
+  background: #ffffff;
+  left: 40%;
+  animation-timing-function: linear;
+}
+#blue {
+  background: #ffffff;
+  left: 50%;
+  animation-timing-function: ease-out;
+}
+#green {
+  background: #ffffff;
+  left: 60%;
+  animation-timing-function: cubic-bezier(0.311, 0.441, 0.444, 1.649);
+}
+
+@keyframes jump {
+  50% {
+    top: 10%;
+  }
+}
